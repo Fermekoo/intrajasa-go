@@ -9,10 +9,7 @@ go mod init
 then reference intrajasa-go in your project file using `import`:
 ```go
 import (
-    "github.com/midtrans/midtrans-go"
-    "github.com/midtrans/midtrans-go/coreapi"
-    "github.com/midtrans/midtrans-go/snap"
-    "github.com/midtrans/midtrans-go/iris"
+    "github.com/Fermekoo/intrajasa-go/api"
 )
 ```
 

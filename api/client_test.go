@@ -11,7 +11,7 @@ import (
 
 func TestGenerateVa(t *testing.T) {
 
-	intra_client := NewClient("", "", intrajasa.Sandbox)
+	intra_client := NewClient("put your merchant id", "put your secret word", intrajasa.Sandbox)
 	merchantRefcode := uuid.NewString()
 	payloads := &intrajasa.CreateVa{
 		MerchantRefCode: merchantRefcode,
