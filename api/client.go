@@ -117,7 +117,7 @@ func (c *Client) CreateVa(payloads *intrajasa.CreateVa) (*intrajasa.IntraResult,
 		VaType:          int(payloads.VaType),
 		SecureCode:      secure_code,
 	}
-	fmt.Println(payloads.CustomerData)
+
 	hash_token := sha256.Sum256([]byte(token.Token))
 	encrypted_token := fmt.Sprintf("%x", hash_token[:])
 
