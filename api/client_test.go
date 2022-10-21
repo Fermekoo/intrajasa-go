@@ -52,7 +52,7 @@ func TestGenerateVaInvalidToken(t *testing.T) {
 }
 
 func TestGenerateToken(t *testing.T) {
-	intra_client := NewClient("497", "fEooX9pa6dGapMi", intrajasa.Sandbox)
+	intra_client := NewClient("", "", intrajasa.Sandbox)
 	ref_code := uuid.NewString()
 
 	token := intra_client.GenerateToken(ref_code)
